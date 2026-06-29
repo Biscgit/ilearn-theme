@@ -18,7 +18,10 @@ into the file and copy-paste the JavaScript File's Contents between the HTML Tag
 At the top of the file you can replace the default wallpaper URL and other parameters if desired. 
 The displayed username gets Fetched automatically from the HTML source.
 
+To apply the right offset, you need to set "Favourite Courses" as the first widget.
+
 After saving, the page should reload within a few seconds automatically.
+
 
 
 
