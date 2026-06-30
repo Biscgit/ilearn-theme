@@ -10,9 +10,9 @@ Theming of the iLearn Portal's Landing page through JavaScript.
 4. Enable `HTML` (click on the `</>`-Button).
 5. In the content-field, paste:
     ```html
-    <scipt>
+    <script>
         
-    </scipt>
+    </script>
     ```
 6. Paste the contents of `ilearn.js` between the `<script>` Tags.
 7. Optionally, adjust the background or colors with the variables available at the top of the file.
