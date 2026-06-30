@@ -136,7 +136,7 @@ if (fav_course) {
 }
 
 
-// modify navbar
+// modify navbar style
 const navbar = document.querySelector("nav");
 Object.assign(navbar.style, {
     backdropFilter: 'blur(10px)',
@@ -147,6 +147,15 @@ navbar.style.setProperty('border', 'none', 'important');
 navbar.style.setProperty('border-radius', '12px', 'important');
 navbar.style.setProperty('margin', '12px', 'important');
 
+// navbar layout
+const container = document.getElementById('usernavigation');
+if (container.lastElementChild) {
+    container.insertBefore(container.lastElementChild, container.firstElementChild);
+}
+container.querySelectorAll('.divider').forEach(el => el.remove());
+
+const editWidget = container.querySelector('.editmode-switch-form');
+editWidget.querySelector('label')?.remove();
 
 // style shelf
 const drawerButton = document.querySelector('.drawer-toggler');
