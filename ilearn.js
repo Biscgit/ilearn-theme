@@ -1,4 +1,4 @@
-// set the wallpaper's URL
+// set the wallpaper's url and main theme colors
 const wallpaperUrl = 'https://images.pexels.com/photos/2815799/pexels-photo-2815799.jpeg';
 const welcomeGradientA = '#ec4899';
 const welcomeGradientB = '#ffbf00';
