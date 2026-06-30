@@ -56,6 +56,7 @@ style.textContent = `
   .card-body li.page-item i {
     color:                      #eeeeee !important;
   }
+  .card-text input,
   .drawer-right .card,
   .course-card {
     background:                 rgba(255,255,255,0.2) !important;
