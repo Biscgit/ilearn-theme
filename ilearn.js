@@ -1,9 +1,9 @@
 // set the wallpaper's URL
-const wallpaperUrl = 'https://images.pexels.com/photos/32637184/pexels-photo-32637184.jpeg';
+const wallpaperUrl = 'https://images.pexels.com/photos/2815799/pexels-photo-2815799.jpeg';
 const welcomeGradientA = '#ec4899';
-const welcomeGradientB = '#7c3aed';
-const textColorPrimary = "#6d28d9";
-const textColorSecondary = "darkgray";
+const welcomeGradientB = '#ffbf00';
+const textColorPrimary = '#aee2ff';
+const textColorSecondary = '#9fa1ff';
 
 
 // extract username and set for welcome
@@ -22,6 +22,12 @@ document.addEventListener('DOMContentLoaded', () => {
 // set styles
 const style = document.createElement('style');
 style.textContent = `
+  .card-body h3 {
+    color:                      ${textColorPrimary} !important;
+  }
+  .card-body span:not(.course-card *) {
+    color:                      ${textColorSecondary} !important;
+  }
   .course-card {
     background:                 rgba(255,255,255,0.15) !important;
     border:                     none !important;
@@ -31,9 +37,15 @@ style.textContent = `
   .course-card span:not(a span) {
     color:                      ${textColorSecondary} !important;
   }
+  .course-card div:not(span) {
+    color:                      ${textColorSecondary} !important;
+  }
   .course-card a {
     color:                      ${textColorPrimary} !important;
     font-weight:                700 !important;
+  }
+  .coursename i {
+    color:                      ${textColorPrimary} !important;
   }
   .card-footer {
      background:                transparent !important
