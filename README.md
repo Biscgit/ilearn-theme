@@ -3,7 +3,7 @@ Theming of the iLearn Portal's Landing page through JavaScript.
 
 ## How to Setup
 
-Within iLearn, create a new Textbox. In there, select the Option to view the raw Script.
+Within iLearn, create a new Textbox. Ensure that it is the last element, because of the execution order. In there, select the Option to view the raw Script.
 
 Write 
 
