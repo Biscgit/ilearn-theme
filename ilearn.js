@@ -19,24 +19,22 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function getGreeting(username) {
-  const hour = new Date().getHours();
+    const hour = new Date().getHours();
 
-  let timeGreeting;
+    let timeGreeting;
 
-  if (hour <= 2) timeGreeting = "Good evening";
-  else if (hour <= 5) timeGreeting = "Go to bed";
-  else if (hour <= 11) timeGreeting = "Good morning";
-  else if (hour <= 16) timeGreeting = "Good afternoon";
-  else if (hour <= 20) timeGreeting = "Good evening";
-  else timeGreeting = "Welcome back";
+    if (hour <= 2) timeGreeting = "Good evening";
+    else if (hour <= 5) timeGreeting = "Go to bed";
+    else if (hour <= 11) timeGreeting = "Good morning";
+    else if (hour <= 16) timeGreeting = "Good afternoon";
+    else if (hour <= 20) timeGreeting = "Good evening";
+    else timeGreeting = "Welcome back";
 
-  const rareMessage = `beep boop bap bap?`;
-  const normalMessage = `${timeGreeting}, ${username}!`;
+    const rareMessage = `beep boop bap bap?`;
+    const normalMessage = `${timeGreeting}, ${username}!`;
 
-  return Math.random() < 0.05 ? rareMessage : normalMessage;
+    return Math.random() < 0.05 ? rareMessage : normalMessage;
 }
-
-console.log(getGreeting("Alex"));
 
 
 // set styles
